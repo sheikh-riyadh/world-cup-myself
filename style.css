@@ -75,6 +75,7 @@ section,
     padding: 16px 25px;
     width: 130px;
     font-size: 1.125rem;
+    animation: btn-animation 1s ease-in-out infinite alternate;
 }
 
 .hero-button a {
@@ -366,5 +367,15 @@ hr {
 
     .match-items-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@keyframes btn-animation {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .5;
     }
 }
